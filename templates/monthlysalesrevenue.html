@@ -1,0 +1,21 @@
+<html>
+	<link rel='stylesheet' href='../static/colours.css'>
+	<head>
+		<title>Monthly Sales Revenue</title>
+	</head>
+	<body>
+		<img src="../static/viewmonthlyrevenue.png" width="125" height="125" />
+		<h1>View Monthly Sales Revenue</h1>
+		<form action="{{url_for('viewmonthlysalesrevenue')}}" method="POST">
+			<label for="month">Enter a month (MM):</label>
+			<input type="text" id="month" required name="month"><br><br>
+			<label for="year">Enter a year (YYYY):</label>
+			<input type="text" id="year" required name="year"><br><br>
+			<input type="submit" value="Submit">
+		</form>
+		<p>&nbsp;</p>
+		<div id="footer">
+			<a href="{{ url_for('home')}}"><img src="../static/logo.png" width="100" height="100" />
+		<!-- end #footer --></div>
+	</body>
+</html>

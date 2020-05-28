@@ -1,0 +1,19 @@
+<html>
+	<link rel='stylesheet' href='../static/colours.css'>
+	<head>
+		<title>Daily Transactions</title>
+	</head>
+	<body>
+		<img src="../static/viewdailytransactions.png" width="125" height="125" />
+		<h1>View Daily Transactions</h1>
+			<form action="{{url_for('viewdailytransactions')}}" method="POST">
+				<label for="date">Enter a date (DD-MM-YYYY) to view daily transactions:</label>
+				<input type="date" id="date" required name="date"><br><br>
+				<input type="submit" value="Submit">
+			</form>
+		
+		<div id="footer">
+			<a href="{{ url_for('home')}}"><img src="../static/logo.png" width="100" height="100" />
+		<!-- end #footer --></div>
+	</body>
+</html>

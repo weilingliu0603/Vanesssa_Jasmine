@@ -1,0 +1,15 @@
+body { background: #fff5d7; 
+		color: #260516;
+		font-family: Arial, Helvetica, sans-serif;
+		text-align: center;
+	}
+h1 { color: #260516; 
+	text-align: center;
+	font-weight: bold;
+	}
+div { text-align: center }
+table, th, td {
+  border: 1px solid black;
+  background: #ffdde2;
+  text-align: center;
+}

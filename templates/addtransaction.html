@@ -1,0 +1,42 @@
+<html>
+	<link rel='stylesheet' href='../static/colours.css'>
+	<head>
+		<title>Add Transaction</title>
+	</head>
+	<body>
+		<img src="../static/addnewtransaction.png" width="125" height="125" />
+		<h1>Add New Transaction</h1>
+		<form action="{{url_for('transactionadded')}}" method="POST">
+			<label for="memberID">MemberID (Input 0 if Non-Member):</label>
+			<input type="number" id="memberID" required name="memberID" min='0'><br><br>
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required maxlength='128'><br><br>
+			<label for="date">Date:</label>
+			<input type="date" id="date" name="date" required><br><br>
+			<fieldset name='check'>
+				<p><b><u>Tick for the service/s done</u></b></p>
+				<input type="checkbox" id="1" name="check1" value='1'>
+				<label for="CutShort">Cut (short length) -- $35.00 </label><br>
+				<input type="checkbox" id="2" name="check2" value='2'>
+				<label for="CutMedium">Cut (medium length) -- $40.00 </label><br>
+				<input type="checkbox" id="3" name="check3" value='3'>
+				<label for="CutLong">Cut (long length) -- $45.00 </label><br>
+				<input type="checkbox" id="4" name="check4" value='4'>
+				<label for="Colour">Colour -- $100 </label><br>
+				<input type="checkbox" id="5" name="check5" value='5'>
+				<label for="LightHalf">Highlight (half head) -- $150.00</label><br>
+				<input type="checkbox" id="6" name="check6" value='6'>
+				<label for="LightFull">Highlight (full head) -- $200.00</label><br>
+				<input type="checkbox" id="7" name="check7" value='7'>
+				<label for="Perm">Perm -- $200.00 </label><br>
+				<input type="checkbox" id="8" name="check8" value='8'>
+				<label for="Rebond">Rebond -- $180.00</label><br>
+				<input type="checkbox" id="9" name="check9" value='9'>
+				<label for="Treatment">Treatment -- $80.00</label><br><br>
+			</fieldset>
+	 <input type="submit" value="Submit">
+		<div id="footer">
+			<a href="{{ url_for('home')}}"><img src="../static/logo.png" width="100" height="100" />
+		<!-- end #footer --></div>
+	</body>
+</html>
