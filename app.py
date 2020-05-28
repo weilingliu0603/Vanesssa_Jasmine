@@ -200,5 +200,4 @@ def viewmembertransactionhistory():
     return flask.render_template('viewmembertransactionhistory.html', rows=rows, i=i,d=d,ta=ta,t=t)
 
 if __name__ == '__main__':
-    app.run(port = 2200, debug=True)
-app.run(debug=True)
+    app.run(debug=True, use_reloader=True)
